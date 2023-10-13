@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "getting-into-it",
+	"version": "${version}",
+	"name": "Getting into it",
+	"description": "Imagine dragons",
+	"authors": [
+		"Cosmikyu"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/getting-into-it/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.cosmikyu.gettingit.GettingIntoIt"
+		],
+		"fabric-datagen": [
+			"net.cosmikyu.gettingit.GettingIntoItDataGenerator"
+		]
+	},
+	"mixins": [
+		"getting-into-it.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.23",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
